@@ -1,2 +1,4 @@
 # underscore-master
-root dna for ticketfly themes
+
+DESCRIPTION: Root DNA for Ticketfly internal and contractor themes
+
