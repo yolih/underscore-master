@@ -25,14 +25,13 @@ function gold_parent_s_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'gold-parent_s' ),
 	) );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'standard', 'aside', 'gallery', 'image', 'video', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'video', 'link' ) );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'gold_parent_s_custom_background_args', array(
