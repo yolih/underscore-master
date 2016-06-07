@@ -141,8 +141,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * Adds Blog ID to the array of body classes.
  */
 function contractor_body_class( $classes ) {
-	$blog_id = get_current_blog_id();
-	$classes[] = 'site-id-' . $blog_id;
+	$classes[] = 'site-id-' . get_current_blog_id();
 	return $classes;
 }
 add_filter( 'body_class', 'contractor_body_class' );
